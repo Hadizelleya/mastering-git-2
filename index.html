@@ -13,5 +13,239 @@
 
     <!-- git config --global user.name "your name" this will set your git username globally across all your local repos -->
     <!-- git config --global user.email "your email" this will set your git email globally across all your local repos -->
+
+    <!-- git init (initialize a new local repository on your machine)-->
+    <!-- git add . (adds all your untracked files to track them )-->
+    <!-- git commit -m "name of the commit" (commits the changes you did to repository and saves your new changes on the local repo on your machine)-->
+    <!-- git branch (checks what branch your currently on)-->
+    <!-- git branch ?name? (creates a new branch with the you provided)-->
+    <!-- git checkout ?branch name?  (switches to the branch you entered its name)-->
+    <!-- git checkout -b ?branch name? (creates a new branch and switch to it)-->
+    <!-- git status (checks if there is any untracked files) -->
+    <!-- git logs (lists all commits you did to the repository and shows each commit id ) -->
+
+    <!-- our terminal: 
+    PS D:\web developing\web 4 course\git & github\lesson 1> git init
+Initialized empty Git repository in D:/web developing/web 4 course/git & github/lesson 1/.git/
+PS D:\web developing\web 4 course\git & github\lesson 1> git add index.html
+PS D:\web developing\web 4 course\git & github\lesson 1> git add style.css
+PS D:\web developing\web 4 course\git & github\lesson 1> git add .
+PS D:\web developing\web 4 course\git & github\lesson 1> git commit -m "Enviroment Setup"
+[master (root-commit) 310f828] Enviroment Setup
+ 3 files changed, 16 insertions(+)
+ create mode 100644 index.html
+ create mode 100644 script.js
+ create mode 100644 style.css
+PS D:\web developing\web 4 course\git & github\lesson 1> git add .
+PS D:\web developing\web 4 course\git & github\lesson 1> git commit -m "linked css file"
+[master 6609e3b] linked css file
+ 2 files changed, 6 insertions(+)
+PS D:\web developing\web 4 course\git & github\lesson 1> git status
+On branch master
+nothing to commit, working tree clean
+PS D:\web developing\web 4 course\git & github\lesson 1> git log
+commit 6609e3bf81f4ba3300487b5045372b38ccaf12fd (HEAD -> master)
+Author: HADYZELLEYA\hadi_ <hadi_scorpion95@hotmail.com>
+Date:   Thu Sep 18 19:59:33 2025 +0300
+
+    linked css file
+
+commit 310f828e63b399f75914fb17ef44050d6b4d4bae
+Author: HADYZELLEYA\hadi_ <hadi_scorpion95@hotmail.com>
+Date:   Thu Sep 18 19:57:26 2025 +0300
+
+Author: HADYZELLEYA\hadi_ <hadi_scorpion95@hotmail.com>
+Date:   Thu Sep 18 19:57:26 2025 +0300
+Author: HADYZELLEYA\hadi_ <hadi_scorpion95@hotmail.com>
+Date:   Thu Sep 18 19:57:26 2025 +0300
+Author: HADYZELLEYA\hadi_ <hadi_scorpion95@hotmail.com>
+Date:   Thu Sep 18 19:57:26 2025 +0300
+Author: HADYZELLEYA\hadi_ <hadi_scorpion95@hotmail.com>
+Date:   Thu Sep 18 19:57:26 2025 +0300
+Author: HADYZELLEYA\hadi_ <hadi_scorpion95@hotmail.com>
+Date:   Thu Sep 18 19:57:26 2025 +0300
+
+    Enviroment Setup
+    Enviroment Setup
+PS D:\web developing\web 4 course\git & github\lesson 1> git checkout 310f828e63b399f75914fb17ef44050d6b4d4bae
+Note: switching to '310f828e63b399f75914fb17ef44050d6b4d4bae'.
+PS D:\web developing\web 4 course\git & github\lesson 1> git checkout 310f828e63b399f75914fb17ef44050d6b4d4bae
+Note: switching to '310f828e63b399f75914fb17ef44050d6b4d4bae'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+Note: switching to '310f828e63b399f75914fb17ef44050d6b4d4bae'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+
+You are in 'detached HEAD' state. You can look around, make experimental
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+
+If you want to create a new branch to retain commits you create, you may
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+changes and commit them, and you can discard any commits you make in this
+changes and commit them, and you can discard any commits you make in this
+changes and commit them, and you can discard any commits you make in this
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+
+  git switch -c <new-branch-name>
+
+Or undo this operation with:
+
+  git switch -
+
+Turn off this advice by setting config variable advice.detachedHead to false
+
+HEAD is now at 310f828 Enviroment Setup
+PS D:\web developing\web 4 course\git & github\lesson 1> git checkout master
+Previous HEAD position was 310f828 Enviroment Setup
+Switched to branch 'master'
+PS D:\web developing\web 4 course\git & github\lesson 1> git branch 
+* master
+PS D:\web developing\web 4 course\git & github\lesson 1> git branch main
+PS D:\web developing\web 4 course\git & github\lesson 1> git branch
+  main
+* master
+PS D:\web developing\web 4 course\git & github\lesson 1> git checkout main
+Switched to branch 'main'
+PS D:\web developing\web 4 course\git & github\lesson 1> git branch
+* main
+  master
+PS D:\web developing\web 4 course\git & github\lesson 1> git checkout 310f828e63b399f75914fb17ef44050d6b4d4bae
+Note: switching to '310f828e63b399f75914fb17ef44050d6b4d4bae'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+
+  git switch -c <new-branch-name>
+
+Or undo this operation with:
+
+  git switch -
+
+Turn off this advice by setting config variable advice.detachedHead to false
+
+  master
+PS D:\web developing\web 4 course\git & github\lesson 1> git checkout 310f828e63b399f75914fb17ef44050d6b4d4bae
+Note: switching to '310f828e63b399f75914fb17ef44050d6b4d4bae'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+
+  git switch -c <new-branch-name>
+
+Or undo this operation with:
+
+  git switch -
+
+Turn off this advice by setting config variable advice.detachedHead to false
+
+Note: switching to '310f828e63b399f75914fb17ef44050d6b4d4bae'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+
+  git switch -c <new-branch-name>
+
+Or undo this operation with:
+
+  git switch -
+
+Turn off this advice by setting config variable advice.detachedHead to false
+
+state without impacting any branches by switching back to a branch.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+
+  git switch -c <new-branch-name>
+
+Or undo this operation with:
+
+  git switch -
+
+Turn off this advice by setting config variable advice.detachedHead to false
+
+do so (now or later) by using -c with the switch command. Example:
+
+  git switch -c <new-branch-name>
+
+Or undo this operation with:
+
+  git switch -
+
+Turn off this advice by setting config variable advice.detachedHead to false
+
+
+Or undo this operation with:
+
+  git switch -
+
+Turn off this advice by setting config variable advice.detachedHead to false
+
+
+  git switch -
+
+Turn off this advice by setting config variable advice.detachedHead to false
+
+HEAD is now at 310f828 Enviroment Setup
+Turn off this advice by setting config variable advice.detachedHead to false
+
+HEAD is now at 310f828 Enviroment Setup
+HEAD is now at 310f828 Enviroment Setup
+PS D:\web developing\web 4 course\git & github\lesson 1> git branch
+* (HEAD detached at 310f828)
+  main
+  master
+* (HEAD detached at 310f828)
+  main
+* (HEAD detached at 310f828)
+* (HEAD detached at 310f828)
+  main
+* (HEAD detached at 310f828)
+* (HEAD detached at 310f828)
+  main
+  master
+PS D:\web developing\web 4 course\git & github\lesson 1> git branch feature-navbar
+PS D:\web developing\web 4 course\git & github\lesson 1> git checkout feature-navbar
+Switched to branch 'feature-navbar'
+PS D:\web developing\web 4 course\git & github\lesson 1> git branch
+* feature-navbar
+  main
+  master
+PS D:\web developing\web 4 course\git & github\lesson 1> git checkout -b hadi
+Switched to a new branch 'hadi'
+PS D:\web developing\web 4 course\git & github\lesson 1> git branch
+  feature-navbar
+* hadi
+  main
+  master 
+    -->
   </body>
 </html>
